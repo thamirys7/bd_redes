@@ -21,7 +21,7 @@ class AtletasRepository:
 
         cursor = conexao.cursor()
 
-        cursor.execute("SELECT * FROM medicos WHERE id = %s", [id])
+        cursor.execute("SELECT * FROM atletas WHERE id = %s", [id])
 
         registro = cursor.fetchone()
 
